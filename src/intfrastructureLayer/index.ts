@@ -12,6 +12,6 @@ const url = 'http://localhost:3005';
 
 integrationContainer
   .bind<IAPIModule>(INTEGRATION_MODULE.APIModule)
-  .toDynamicValue(({container}) => {
+  .toDynamicValue(() => {
     return new APIModule(url);
   });

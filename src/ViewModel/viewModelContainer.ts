@@ -12,7 +12,7 @@ export const viewModelContainer = new Container();
 viewModelContainer
   .bind<IFooViewModel>(VIEW_MODEL.Foo)
   .toDynamicValue(({container}) => {
-    const service = container.get<IFooService>(SERVICE.Foo);
+    const service = container.get<IFooService>(SERVICE.FOO);
     return new FooViewModel(service);
   })
   .inSingletonScope();
