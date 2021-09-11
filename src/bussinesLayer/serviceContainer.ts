@@ -5,13 +5,13 @@ import {FooService} from './services/Foo';
 import {IFooService} from './services/Foo/interfaces';
 
 export const SERVICE = {
-  Foo: Symbol.for('FooService'),
+  FOO: Symbol.for('FooService'),
 };
 
 export const serviceContainer = new Container();
 
 serviceContainer
-  .bind<IFooService>(SERVICE.Foo)
+  .bind<IFooService>(SERVICE.FOO)
   .toDynamicValue(({container}) => {
     const apiClient = container.get<IFooApiClient>(API_CLIENT.Foo);
     return new FooService(apiClient);

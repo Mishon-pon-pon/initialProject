@@ -10,7 +10,7 @@ export class APIModule implements IAPIModule {
 
   constructor(protected prefixUrl: string) {
     this.api = ky.create({
-      prefixUrl,
+      prefixUrl: prefixUrl,
       throwHttpErrors: false,
       credentials: 'same-origin',
     });

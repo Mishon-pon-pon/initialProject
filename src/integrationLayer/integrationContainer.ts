@@ -8,9 +8,9 @@ export const API_CLIENT = {
   Foo: Symbol.for('FooApiClient'),
 };
 
-export const integrationContainer = new Container();
+export const apiClientsContainer = new Container();
 
-integrationContainer
+apiClientsContainer
   .bind<IFooApiClient>(API_CLIENT.Foo)
   .toDynamicValue(({container}) => {
     const apiModule = container.get<IAPIModule>(INTEGRATION_MODULE.APIModule);
