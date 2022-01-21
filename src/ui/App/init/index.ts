@@ -1,6 +1,6 @@
-import {IAppConfig} from '../settings/AppConfigType';
-import {Bootstrap} from '../../../Boostrap';
-import {ConfigApp} from '../settings/ConfigApp';
+import { IAppConfig } from "../settings/AppConfigType";
+import { Bootstrap } from "../../../Boostrap";
+import { ConfigApp } from "../settings/ConfigApp";
 
 export const init = async (): Promise<{
   bootstrap: Bootstrap;
@@ -13,5 +13,6 @@ export const init = async (): Promise<{
   const routerConst = ConfigApp.getRouterConst();
 
   bootstrap.initRouter(routes, routerConst);
-  return {bootstrap: bootstrap, config: ConfigApp};
+
+  return { bootstrap: bootstrap, config: ConfigApp };
 };
