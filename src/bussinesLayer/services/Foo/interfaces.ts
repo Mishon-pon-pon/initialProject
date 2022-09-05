@@ -1,4 +1,4 @@
-import {IFooDTO} from '../../../Models';
+import { IFooDTO } from "../../../fsd/shared/Models";
 
 export interface IFooService {
   getData(): Promise<IFooDTO>;

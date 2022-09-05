@@ -1,6 +1,6 @@
-import {action, makeObservable, observable} from 'mobx';
-import {IFooService} from '../../../bussinesLayer/services/Foo/interfaces';
-import {IFooDTO} from '../../../Models';
+import { action, makeObservable, observable } from "mobx";
+import { IFooService } from "../../../bussinesLayer/services/Foo/interfaces";
+import { IFooDTO } from "../../../fsd/shared/Models";
 
 export interface IFooViewModel {
   data?: IFooDTO;

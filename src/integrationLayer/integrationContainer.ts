@@ -1,6 +1,6 @@
 import { Container } from "inversify";
 import { INFRASTRUCTION_MODULE } from "../intfrastructureLayer";
-import { IAPIModule } from "../intfrastructureLayer/APIModule/interfaces";
+import { IAPIModule } from "../APIModule/interfaces";
 import { FooApiClient } from "./apiClients/foo";
 import { IFooApiClient } from "./apiClients/foo/interfaces";
 

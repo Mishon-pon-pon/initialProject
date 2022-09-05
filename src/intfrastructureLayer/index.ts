@@ -1,6 +1,6 @@
 import { Container } from "inversify";
-import { APIModule } from "./APIModule";
-import { IAPIModule } from "./APIModule/interfaces";
+import { APIModule } from "../APIModule";
+import { IAPIModule } from "../APIModule/interfaces";
 
 export const INFRASTRUCTION_MODULE = {
   APIModule: Symbol.for("APIModule"),
