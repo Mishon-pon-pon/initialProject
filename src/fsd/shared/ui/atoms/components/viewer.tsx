@@ -5,5 +5,5 @@ interface IProps {
 }
 
 export const Viewer = ({ children }: IProps) => {
-  return <span>{children}</span>;
+  return <span data-testid="viewer">{children}</span>;
 };
